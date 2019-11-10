@@ -22,6 +22,6 @@
   "homepage": "https://github.com/madsleejensen/react-native-mobilepay#readme",
   "license": "since we bundle MobilePay-AppSwitch-SDK see: https://github.com/MobilePayDev/MobilePay-AppSwitch-SDK/blob/master/LICENSE",
   "peerDependencies": {
-    "react-native": ">=0.47.0"
+    "react-native": ">=0.61.4"
   }
 }
