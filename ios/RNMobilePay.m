@@ -34,11 +34,6 @@ RCT_EXPORT_METHOD(setTimeoutSeconds:(int)seconds)
     [[MobilePayManager sharedInstance] setTimeoutSeconds:seconds];
 }
 
-RCT_EXPORT_METHOD(setReturnSeconds:(int)seconds)
-{
-    [[MobilePayManager sharedInstance] setReturnSeconds:seconds];
-}
-
 RCT_EXPORT_METHOD(setCountry:(MobilePayCountry)county)
 {
     [[RNMobilePayHandler sharedInstance] setCountry:county];
