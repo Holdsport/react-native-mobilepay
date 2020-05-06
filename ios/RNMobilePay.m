@@ -24,7 +24,7 @@ RCT_EXPORT_METHOD(setup:(NSString *)merchantId country:(MobilePayCountry)country
     [[RNMobilePayHandler sharedInstance] setup:merchantId country:country merchantUrlScheme:merchantUrlScheme];
 }
 
-RCT_EXPORT_METHOD(createPayment:(NSString *)orderId productPrice:(NSDecimalNumber *)productPrice resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
+RCT_EXPORT_METHOD(createPayment:(NSString *)orderId productPrice:(nonnull NSNumber *)productPrice resolve:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject)
 {
     [[RNMobilePayHandler sharedInstance] createPayment:orderId productPrice:productPrice resolve:resolve reject:reject];
 }
